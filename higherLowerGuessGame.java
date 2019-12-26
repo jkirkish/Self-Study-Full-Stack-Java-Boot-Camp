@@ -51,7 +51,8 @@ public class higherLowerGuessGame{
 			System.out.println("\nThe number to guess was: " + actualNumber);
 		}
 		}
-		
+		//close the scanner to prevent memory leaks
+		input.close();
 	}
 
 }
