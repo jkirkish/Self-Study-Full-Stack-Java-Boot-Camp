@@ -1,5 +1,4 @@
 body{
-	
 	background-image: url('./airplane.JPG');
 	background-repeat: no-repeat;
 }
@@ -12,26 +11,11 @@ nav{
 h1{
 	color: rgb(161,255,0);
 }
-h2{
-	color: rgb(161,160,35);
-	text-align: center;
-	text-decoration: underline;
-}
 label{
 	width: 100%;
-	display: inline;
+	display:block;
 	padding-right: 50px;
 	color: rgb(255,255,0);
 	font-size: 25px;
-	text-align: center;
 	
 }
-input{
-	margin-bottom: 10px;
-	display: inline
-	text-align: center;
-}
-.container{
-	display: block;
-}
-

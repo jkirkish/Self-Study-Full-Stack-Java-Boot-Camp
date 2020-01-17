@@ -1,22 +1,21 @@
 body{
 	background-image: url('./bull.jpg');
 	background-repeat: no-repeat;
-	
 }
-.container{
+header{
+	text-align: center;
+}
+nav{
 	text-align: center;
 }
 h1{
-	color:rgb(161,255,0);
+	color: rgb(161,255,0);
 }
 label{
 	width: 100%;
 	display:block;
-	color: rgb(255,255,139);
-	font-size: 24px;
-}
-input[type='button']{
-	
-	margin-top: 25px;
+	padding-right: 50px;
+	color: rgb(255,255,0);
+	font-size: 25px;
 	
 }
