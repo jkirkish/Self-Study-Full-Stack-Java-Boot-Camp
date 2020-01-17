@@ -1,20 +1,20 @@
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.IntStream;
+
+/**JavaAssignmentsLowerHigherGuessGame.java
+ * author jkirkish
+ *Jan 17, 2020
+ */
 
 /**
- * Author Joseph Kirkish
- * 
- * Date 12/19/2019
- **/
+ * @author jkirkish
+ *
+ */
+public class LowerHigherGuessGame {
 
-public class higherLowerGuessGame {
 
-	
-	public static void whileLooper() {
-		// variable
+	public static void forLooper() {
 		int guessNumber;
-		int count = 0;
 		// Objects
 		Random random = new Random();
 		Scanner input = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class higherLowerGuessGame {
 		int actualNumber = random.nextInt(100) + 1;
 
 		// The player only gets 5 chances to guess the number.
-		while (count < 4) {
+		for (int count = 0; count <= 3; count++) {
 			System.out.println();
 			// An error message is displayed if the user input a number outside of range
 			// 1-100
@@ -47,23 +47,23 @@ public class higherLowerGuessGame {
 					System.out.println("You win!\n");
 				}
 			}
-			count++;
-			if (count == 4 && guessNumber == actualNumber) {
+			if (count == 3 && guessNumber == actualNumber) {
 				System.out.println("\nYou win!");
 				System.out.println("\nThe number to guess was: " + actualNumber);
-			} else if (count == 4 && guessNumber != actualNumber) {
+			} else if (count == 3 && guessNumber != actualNumber) {
 				System.out.println("\nYou lose!");
 				System.out.println("\nThe number to guess was: " + actualNumber);
-
 			}
 		}
 		// close the scanner to prevent memory leaks
 		input.close();
 	}
 
+	
+	
 	public static void main(String[] args) {
 		
-		whileLooper();
-       
+		forLooper();
 	}
+
 }
