@@ -59,8 +59,5 @@ public class Military extends Airplanes
 	public String toString() {
 		return "Military [make=" + make + ", model=" + model + ", weapons=" + weapons + "]";
 	}
-
-     
 	
-
 }
